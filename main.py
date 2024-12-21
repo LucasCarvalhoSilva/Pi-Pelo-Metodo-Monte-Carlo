@@ -6,8 +6,8 @@ def main():
   print("=> Cálculo de Pi pelo Método de Monte Carlo <=")
 
   try:
-    startTime = time.time()
     numberOfPoints = int(input("Digite a quantidade de pontos que devem ser simulados: "))
+    startTime = time.time()
     if numberOfPoints <= 0:
       raise ValueError("Digite um valor valído, precisa ser um número maior do que 0")
   except ValueError as e:
